@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="/CSS/Gamestye.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+
+    <!-- Game Buttons -->
+    <div>
+        <button onclick="playRound(0)" class="choices">
+            <img src="/Images/rock.png" alt="rock">
+            <div class="choice-caption">Rock</div>
+        </button>
+        <button onclick="playRound(1)" class="choices">
+            <img src="/Images/paper.png" alt="paper">
+            <div class="choice-caption">Paper</div>
+        </button>
+        <button onclick="playRound(2)" class="choices">
+            <img src="/Images/scissors.png" alt="scissors">
+            <div class="choice-caption">Scissors</div>
+        </button>
+    </div>
+
+    <!-- Result Display -->
+    <h1 id="result-space">Make Your Move!</h1>
+    <div>
+        <h3>Your Choice: 
+            <img id="yourImage" class="result-image hidden" alt="Your choice image">
+            <span id="yourSymbol"></span>
+        </h3>
+        <h3>Computer's Choice: 
+            <img id="computerImage" class="result-image hidden" alt="Computer's choice image">
+            <span id="computerSymbol"></span>
+        </h3>
+    </div>
+
+    <!-- Score Display -->
+    <h2>
+        User Score: <span id="userScore">0</span> | 
+        Computer Score: <span id="computerScore">0</span> | 
+        Draws: <span id="draws">0</span>
+    </h2>
+
+    <!-- Reset Button -->
+    <button onclick="resetScores()" class="reset-button">Reset Scores</button>
+
+    <script src="/JS/rock-paper.js">   </script>
+</body>
+</html>
